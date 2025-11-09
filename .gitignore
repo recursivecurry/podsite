@@ -24,7 +24,6 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-PIPFILE.lock
 
 # PyInstaller
 *.manifest
@@ -112,6 +111,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.virtualenv/
+pythonenv*/
 
 # Spyder project settings
 .spyderproject
@@ -136,6 +137,12 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Ruff cache (modern Python linter)
+.ruff_cache/
+
+# uv cache (modern Python package installer)
+.uv/
 
 # PyCharm
 .idea/
